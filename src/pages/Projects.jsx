@@ -1,5 +1,4 @@
 import projects from '../data/projects'
-import { Link } from 'react-router-dom'
 
 export default function Projects() {
     return (
@@ -12,7 +11,7 @@ export default function Projects() {
                         <h3>{project.name}</h3>
                         <p>{project.description}</p>
                         <img src={project.image} alt ="ProjectImage"/>
-                        <Link to={project.url}>Ver más...</Link>
+                        <a href={project.url} target='blank'>Ver más...</a>
                     </li>
                 )
             })}
